@@ -1,0 +1,17 @@
+.formContainer {
+  display: flex;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  border: 2px solid #511278;
+  background-color: #f1e3fa;
+  margin-bottom: 50px;
+}
+
+.formTitle {
+  font-family: system-ui;
+  font-size: 40px;
+  color: #511278;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.contactListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #511278;
+  background-color: #ffe3c9;
+}
+
+.contact {
+  font-size: 20px;
+  font-family: system-ui;
+  margin-left: 10px;
+  font-weight: 700;
+  color: #410269;
+}
