@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/views/LoginView/LoginView.module.css"],"names":[],"mappings":"AAAA,uBACI,WAAY,CACZ,gBACJ,CAEA,wBACI,gBACJ","file":"4.568625ff.chunk.css","sourcesContent":[".form { \r\n    width: 500px;\r\n    margin-left: 50px;\r\n}\r\n\r\n.title {\r\n    margin-left: 50px;\r\n}"]}

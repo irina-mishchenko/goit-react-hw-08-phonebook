@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-react-hw-08-phonebook"]=this["webpackJsonpgoit-react-hw-08-phonebook"]||[]).push([[6],{104:function(t,e,o){t.exports={text:"HomePageView_text__21asl"}},107:function(t,e,o){"use strict";o.r(e),o.d(e,"default",(function(){return s}));var n=o(104),a=o.n(n),c=o(1);function s(){return Object(c.jsx)("h1",{className:a.a.text,children:"Home Page!"})}}}]);
+//# sourceMappingURL=6.566d3ac5.chunk.js.map
