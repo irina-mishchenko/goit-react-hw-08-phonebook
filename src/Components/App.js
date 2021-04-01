@@ -8,10 +8,11 @@ import PublicRoute from './PublicRoute';
 import AppBar from './AppBar/AppBar';
 import { authOperations, authSelectors } from './../redux/auth';
 
-const RegisterView = lazy(() => import('../views/RegisterView'));
-const LoginView = lazy(() => import('../views/LoginView'));
+
+const RegisterView = lazy(() => import('../views/RegisterView/RegisterView'));
+const LoginView = lazy(() => import('../views/LoginView/LoginView'));
 const ContactsView = lazy(() => import('../views/ContactsView'));
-const HomePageView = lazy(() => import('../views/HomePageView'));
+const HomePageView = lazy(() => import('../views/HomePageView/HomePageView'));
 
 function App() {
   const dispatch = useDispatch();

@@ -5,3 +5,21 @@
   margin-right: auto;
   padding-left: 0;
 }
+
+.enter {
+  transform: translateX(-60px);
+}
+
+.enterActive {
+  transform: translateX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.exit {
+  transform: translateX(0);
+}
+
+.exitActive {
+  transform: translateX(-60px);
+  transition: transform 250ms ease-in-out;
+}

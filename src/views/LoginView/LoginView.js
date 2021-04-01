@@ -1,29 +1,25 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { authOperations } from '../redux/auth';
+import { authOperations } from '../../redux/auth';
 
+import s from "./LoginView.module.css";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function RegisterView() {
-  const dispatch = useDispatch();
-  const [name, setName] = useState('');
+export default function LoginView() {
+  const dispath = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleChange = ({ target: { name, value } }) => {
-    switch (name) {
-      case 'name':
-        setName(value);
-        break;
-
+  const handleChange = event => {
+    switch (event.target.name) {
       case 'email':
-        setEmail(value);
+        setEmail(event.target.value);
         break;
 
       case 'password':
-        setPassword(value);
+        setPassword(event.target.value);
         break;
 
       default:
@@ -33,29 +29,16 @@ export default function RegisterView() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(authOperations.register({ name, email, password }));
-    setName('');
+    dispath(authOperations.logIn({ email, password }));
     setEmail('');
     setPassword('');
   };
 
   return (
     <div>
-      <h2>Sign up</h2>
-     
-      <Form onSubmit={handleSubmit} autoComplete="off">
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Name</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={name}
-            onChange={handleChange}
-          />
-          <Form.Text className="text-muted"></Form.Text>
-        </Form.Group>
+      <h2 className={s.title}>Log In</h2>
 
+      <Form onSubmit={handleSubmit} autoComplete="off" className={s.form}>
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Email</Form.Label>
           <Form.Control
@@ -79,7 +62,7 @@ export default function RegisterView() {
         </Form.Group>
 
         <Button variant="primary" type="submit">
-          Sign up
+          Log in
         </Button>
       </Form>
     </div>
